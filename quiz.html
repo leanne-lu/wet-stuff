@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+		<link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="waterdrop.png">
+</head>
+<body>
+    <header class="header">
+        <img src="waterdrop.png" alt="water droplet logo" width="50px" style="float:right">
+        <h1 id="tagline"><a href="index.html">wet-stuff</a></h1>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="quiz.html">quiz</a></li>
+                <li><a href="">what we do</a></li>
+                <li><a href="">get involved</a></li>
+            </ul>
+        </nav>
+        <br><br><br>
+    </header>
+
+    <h2>water research</h2>
+
+    <p><strong>We would love for you to fill out this anonymous questionnaire to help us understand water usage in Manchester:</strong></p>
+    
+    <form name="Quiz">
+        <label for="name">Which area of Manchester do you live in? </label>
+        <input type="text" name="name" size="30">
+
+        <br>
+        <ol>
+        <li><p>How many disposable water bottles do you use a week?</p>
+        <input type="radio" name="bottles" value="0">
+        <label for="0">None, I use a refillable bottle</label><br>
+
+        <input type="radio" name="bottles" value="1-10">
+        <label for="1-10">1-10</label><br>
+
+        <input type="radio" name="bottles" value="11+">
+        <label for="11+">11+</label><br></li>
+        <br>
+
+        <li><label for="showers">How many showers do you have a week?</label></li>
+        <input type="number" name="showers" min="0" max="50" step="1">
+        <br>
+
+        <li><p>Would you like somewhere to swim outdoors in Manchester?</p>
+            <input type="radio" name="swim" value="yes">
+            <label for="yes">Yes!</label><br>
+            <input type="radio" name="swim" value="no">
+            <label for="no">No thank you</label><br></li>
+        
+        </ol>
+
+    </form>
+
+    <button type="button" onclick="finishFunction();">Submit</button>
+
+<br>
+<br>
+<br>
+<!-- SECOND QUIZ -->
+<h2>a bit of fun...</h2>
+<p><strong>Which body of water should you live by?</strong></p>
+
+<main class="quiz-grid-container">
+    <section class="quiz">
+        <form name="quiz">
+            <fieldset>
+                <legend>What colour would you paint your house?</legend>
+
+                <input type="radio" name="colour" id="yellow" value="yellow">
+                <label for="yellow">Yellow</label>
+
+                <input type="radio" name="colour" id="white" value="white">
+                <label for="white">White</label>
+
+                <input type="radio" name="colour" id="brown" value="brown">
+                <label for="brown">Brown</label>
+
+                <input type="radio" name="colour" id="red" value="red">
+                <label for="red">Red</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Which water animal would you love to be?</legend>
+
+                <input type="radio" name="animal" id="dolphin" value="dolphin">
+                <label for="dolphin">Dolphin</label>
+
+                <input type="radio" name="animal" id="crocodile" value="crocodile">
+                <label for="crocodile">Crocodile</label>
+
+                <input type="radio" name="animal" id="swan" value="swan">
+                <label for="swan">Swan</label>
+
+                <input type="radio" name="animal" id="penguin" value="penguin">
+                <label for="penguin">Penguin</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>What is your favourite season?</legend>
+
+                <input type="radio" name="season" id="summer" value="summer">
+                <label for="summer">Summer</label>
+
+                <input type="radio" name="season" id="spring" value="spring">
+                <label for="spring">Spring</label>
+
+                <input type="radio" name="season" id="autumn" value="autumn">
+                <label for="autumn">Autumn</label>
+
+                <input type="radio" name="season" id="winter" value="winter">
+                <label for="winter">Winter</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Would you rather?</legend>
+
+                <input type="radio" name="hobby" id="beach" value="beach">
+                <label for="beach">Lounge on the beach</label>
+
+                <input type="radio" name="hobby" id="hike" value="hike">
+                <label for="hike">Go for a hike</label>
+
+                <input type="radio" name="hobby" id="paddleboard" value="paddleboard">
+                <label for="paddleboard">Go paddle boarding</label>
+
+                <input type="radio" name="hobby" id="plunge" value="plunge">
+                <label for="plunge">Cold water plunge</label>
+            </fieldset>
+            <br>
+            <button type="button" onclick="checkAnswers()">Submit</button>
+
+        </form>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+
+ </body>
+
+</html>
